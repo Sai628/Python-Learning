@@ -1,5 +1,10 @@
 # Byte-compiled
 *.pyc
 
+
+# IDE
+.idea/
+
+
 # Mac OSX
 .DS_Store
