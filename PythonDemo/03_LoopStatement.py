@@ -177,5 +177,3 @@ for letter in 'python':
 # current letter: h
 # current letter: o
 # current letter: n
-
-

@@ -49,3 +49,41 @@ hello = u'Hello\u0020World!'
 print hello  # Hello World!
 
 
+# Build-in Function
+str1 = "this is string example....wow!!!"
+print str1.capitalize()  # This is string example....wow!!!
+print str1.center(40, 'a')  # aaaathis is string example....wow!!!aaaa
+print str1.count('i', 4, 40)  # 2
+print str1.count('i')  # 3
+print str1.count("wow")  # 1
+
+str1 = str1.encode('base64', 'strict')
+print str1
+# dGhpcyBpcyBzdHJpbmcgZXhhbXBsZS4uLi53b3chISE=
+#
+
+str1 = str1.decode('base64', 'strict')
+print str1
+# this is string example....wow!!!
+
+suffix = "wow!!!"
+print str1.endswith(suffix)  # True
+print str1.endswith(suffix, 20)  # True
+
+suffix = "is"
+print str1.endswith(suffix, 2, 4)  # True
+print str1.endswith(suffix, 2, 6)  # False
+
+str1 = "this is\tstring example....wow!!!"
+print str1
+print str1.expandtabs()
+print str1.expandtabs(16)
+# this is	string example....wow!!!
+# this is string example....wow!!!
+# this is         string example....wow!!!
+
+str1 = "this is string example....wow!!!"
+str2 = "exam"
+print str1.find(str2)  # 15
+print str1.find(str2, 10)  # 15
+print str1.find(str2, 40)  # -1

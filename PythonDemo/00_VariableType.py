@@ -62,5 +62,3 @@ print mydict[2]  # This is two
 print tinydict  # {'dept': 'sales', 'code': 6734, 'name': 'john'}
 print tinydict.keys()  # ['dept', 'code', 'name']
 print tinydict.values()  # ['sales', 6734, 'john']
-
-

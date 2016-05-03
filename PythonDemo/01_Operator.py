@@ -219,5 +219,3 @@ print e  # 90
 
 e = a + (b * c) / d
 print e  # 50
-
-
