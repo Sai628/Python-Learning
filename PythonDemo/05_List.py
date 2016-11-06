@@ -9,8 +9,8 @@ print "list2[1:5]:", list2[1:5]  # list2[1:5]: [2, 3, 4, 5]
 list1[2] = 2001
 print list1[2]  # 2001
 
-print list1
-del list1[2]  # ['physics', 'chemistry', 2001, 2000]
+print list1  # ['physics', 'chemistry', 2001, 2000]
+del list1[2]
 print "After deleting value at index 2:", list1  # After deleting value at index 2: ['physics', 'chemistry', 2000]
 
 

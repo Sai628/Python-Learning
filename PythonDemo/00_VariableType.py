@@ -12,11 +12,13 @@ a = b = c = 1
 a, b, c = 1, 2, "John"
 
 
+# Python 有5种标准的数据类型: 数字, 字符串, 列表, 元组, 字典
 # Number
 var1 = 1
 var2 = 10
 del var1
 del var2
+
 
 # String
 mystr = 'Hello World!'
@@ -27,6 +29,8 @@ print mystr[2:5]  # llo
 print mystr[2:]  # llo World!
 print mystr * 2  # Hello World!Hello World!
 print mystr + "TEST"  # Hello World!TEST
+print mystr[-3:]  # ld!
+
 
 # List
 mylist = ['abcd', 786, 2.23, 'john', 70.2]
@@ -38,6 +42,8 @@ print mylist[1:3]  # [786, 2.23]
 print mylist[2:]  # [2.23, 'john', 70.2]
 print tinylist * 2  # [123, 'john', 123, 'john']
 print mylist + tinylist  # ['abcd', 786, 2.23, 'john', 70.2, 123, 'john']
+print tinylist + mylist  # [123, 'john', 'abcd', 786, 2.23, 'john', 70.2]
+
 
 # Tuple
 mytuple = ('abcd', 786, 2.23, 'john', 70.2)
@@ -49,6 +55,8 @@ print mytuple[1:3]  # (786, 2.23)
 print mytuple[2:]  # (2.23, 'john', 70.2)
 print tinytuple * 2  # (123, 'john', 123, 'john')
 print mytuple + tinytuple  # ('abcd', 786, 2.23, 'john', 70.2, 123, 'john')
+print tinytuple + mytuple  # (123, 'john', 'abcd', 786, 2.23, 'john', 70.2)
+
 
 # Dictionary
 mydict = {}
