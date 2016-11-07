@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 tup1 = ('physics', 'chemistry', 1997, 2000)
 tup2 = (1, 2, 3, 4, 5, 6, 7)
 tup3 = "a", "b", "c", "d"
@@ -55,7 +56,8 @@ x, y = 1, 2
 print "Value of x, y:", x, y  # Value of x, y: 1 2
 
 
-# Tuple Build-in Functions
+# Tuple Build-in Functions & Method
+# Method - cmp
 tuple1, tuple2 = (123, 'xyz'), (456, 'abc')
 print cmp(tuple1, tuple2)  # -1
 print cmp(tuple2, tuple1)  # 1
@@ -63,11 +65,13 @@ tuple3 = tuple2 + (786,)
 print cmp(tuple2, tuple3)  # 1
 
 
+# Method - len
 tuple1, tuple2 = (123, 'xyz', 'zara'), (456, 'abc')
 print "First tuple lenght:", len(tuple1)  # First tuple lenght: 3
 print "Second tuple lenght:", len(tuple2)  # Second tuple lenght: 2
 
 
+# Method - max & min
 tuple1, tuple2 = (123, 'xyz', 'zara', 'abc'), (456, 700, 200)
 print "Max value element of tuple1:", max(tuple1)  # Max value element of tuple1: zara
 print "Max value element of tuple2:", max(tuple2)  # Max value element of tuple2: 700
@@ -75,6 +79,7 @@ print "Min value element of tuple1:", min(tuple1)  # Min value element of tuple1
 print "Min value element of tuple2:", min(tuple2)  # Min value element of tuple2: 200
 
 
+# Method - tuple
 aList = [123, 'xyz', 'zara', 'abc']
 aTuple1 = tuple(aList)
 print "Tuple1 elements:", aTuple1  # Tuple1 elements: (123, 'xyz', 'zara', 'abc')
@@ -82,6 +87,3 @@ print "Tuple1 elements:", aTuple1  # Tuple1 elements: (123, 'xyz', 'zara', 'abc'
 aDict = {1: 2, 3: 4}
 aTuple2 = tuple(aDict)  # for a dict, the "tuple" function will return a tuple consists of the keys of the dict
 print "Tuple2 elements:", aTuple2  # Tuple2 elements: (1, 3)
-
-
-

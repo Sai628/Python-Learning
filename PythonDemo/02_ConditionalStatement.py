@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 flag = False
 name = 'luren'
 if name == 'python':

@@ -1,5 +1,6 @@
 # coding=utf8
 
+
 var1 = 'Hello World!'
 var2 = "Python Language"
 
@@ -49,7 +50,9 @@ hello = u'Hello\u0020World!'
 print hello  # Hello World!
 
 
-# Build-in Function
+# String Build-in Functions
+
+# Function - count
 str1 = "this is string example....wow!!!"
 print str1.capitalize()  # This is string example....wow!!!
 print str1.center(40, 'a')  # aaaathis is string example....wow!!!aaaa
@@ -57,15 +60,21 @@ print str1.count('i', 4, 40)  # 2
 print str1.count('i')  # 3
 print str1.count("wow")  # 1
 
+
+# Function - encode
 str1 = str1.encode('base64', 'strict')
 print str1
 # dGhpcyBpcyBzdHJpbmcgZXhhbXBsZS4uLi53b3chISE=
 #
 
+
+# Function - decode
 str1 = str1.decode('base64', 'strict')
 print str1
 # this is string example....wow!!!
 
+
+# Function - endswith
 suffix = "wow!!!"
 print str1.endswith(suffix)  # True
 print str1.endswith(suffix, 20)  # True
@@ -74,6 +83,8 @@ suffix = "is"
 print str1.endswith(suffix, 2, 4)  # True
 print str1.endswith(suffix, 2, 6)  # False
 
+
+# Function - expandtabs
 str1 = "this is\tstring example....wow!!!"
 print str1
 print str1.expandtabs()
@@ -82,6 +93,8 @@ print str1.expandtabs(16)
 # this is string example....wow!!!
 # this is         string example....wow!!!
 
+
+# Function - find
 str1 = "this is string example....wow!!!"
 str2 = "exam"
 print str1.find(str2)  # 15

@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 # Arithmetic operator
 a = 21
 b = 10
