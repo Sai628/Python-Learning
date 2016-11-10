@@ -6,7 +6,7 @@ import threading
 import Queue
 import time
 
-# start thread
+# Start Thread
 def print_time(thread_name, delay):
     count = 0
     while count < 5:
@@ -15,6 +15,7 @@ def print_time(thread_name, delay):
         print "%s: %s" % (thread_name, time.ctime())
 
 
+# just comment out the following code for test.
 '''
 try:
     thread.start_new_thread(print_time, ("Thread-1", 2))
@@ -24,7 +25,7 @@ except:
 '''
 
 
-# when test the thread code above, should remove the comment of the following code.
+# when test the thread-start code above, should remove the comment of the following code.
 # while 1:
 #     pass
 
@@ -42,7 +43,7 @@ Thread-2: Thu Nov 10 11:29:01 2016
 '''
 
 
-# thread module
+# Thread Module
 class MyThread(threading.Thread):
     def __init__(self, threadID, name, counter):
         threading.Thread.__init__(self)
@@ -60,7 +61,7 @@ class MyThread(threading.Thread):
 thread1 = MyThread(1, "Thread-1", 1)
 thread2 = MyThread(2, "Thread-2", 2)
 
-# when test the thread code above, should remove the comment of the following code.
+# when test the thread-module code above, should remove the comment of the following code.
 # thread1.start()
 # thread2.start()
 
@@ -85,7 +86,7 @@ Exiting Thread-2
 '''
 
 
-# thread synchronous
+# Thread Synchronous
 class MyThread2(threading.Thread):
     def __init__(self, threadID, name, counter):
         threading.Thread.__init__(self)
@@ -134,7 +135,7 @@ Thread2-2: Thu Nov 10 12:53:22 2016
 print "Exiting Main Thread"  # Exiting Main Thread
 
 
-# thread Queue
+# Thread Queue
 class MyThread3(threading.Thread):
     def __init__(self, threadID, name, q):
         threading.Thread.__init__(self)
