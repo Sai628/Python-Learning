@@ -1,1 +1,1 @@
-# Some Demo for Python Language
+# Some Learning Code for Python Language
